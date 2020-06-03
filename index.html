@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.5.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Cooking Measurement Conversions</h1>
+      <p>We can help you convert basic kitchen measurements!</p>
+    </div>
+
+    <form id ="cupsToMl">
+      <div class="form-group">
+        <label for="cups">Cups:</label>
+        <input id="cups" class="form-control" type="text">
+      </div>
+      <button id="cupsToMLButton" type="submit" class="btn btn-primary">Convert Cups to ML's!</button>
+      <div class ="output cupsToMlOutput">
+
+      </div>
+    </form>
+
+    <form id ="mlToCups">
+      <div class="form-group">
+        <label for="milliliters">Milliliters:</label>
+        <input id="milliliters" class="form-control" type="text">
+      </div>
+      <button id="millilitersToCupsButton" type="submit" class="btn btn-primary">Convert ML's to Cups!</button>
+      <div class ="output mlToCupsOutput">
+        
+      </div>
+    </form>
+
+    <form id ="tbsp2Tsp">
+      <div class="form-group">
+        <label for="tbsp">Tablespoons:</label>
+        <input id="tbsp" class="form-control" type="text">
+      </div>
+      <button id="tbsp2TspButton" type="submit" class="btn btn-primary">Convert Tbsp to Tsp!</button>
+      <div class ="output tbsp2TspOutput">
+        
+      </div>
+    </form>
+
+    <form id ="tsp2Tbsp">
+      <div class="form-group">
+        <label for="tsp">Teaspoons:</label>
+        <input id="tsp" class="form-control" type="text">
+      </div>
+      <button id="tsp2TbspButton" type="submit" class="btn btn-primary">Convert Tspp to Tbsp!</button>
+      <div class ="output tsp2TbspOutput">
+        
+      </div>
+    </form>
+
+  </div>
+</body>
+</html>
