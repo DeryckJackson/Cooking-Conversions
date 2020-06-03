@@ -21,7 +21,7 @@ $(document).ready(function () {
     const cups = parseInt($("#cups").val());
     const result = cups2ML(cups);
 
-    $("#cupsToMLOutput").append("<p>" + result + "</p>");
+    $(".output.cupsToMlOutput").append("<p>" + result + "</p>");
   });
 });
 
@@ -29,7 +29,7 @@ $(document).ready(function () {
   $("form#mlToCups").submit(function(event) {
     event.preventDefault();
     
-    const ml = parseInt($("#milliliters")).val();
+    const ml = parseInt($("#milliliters").val());
     const result = ml2Cups(ml);
 
     $(".output.mlToCupsOutput").append("<p>" + result + "</p>");
@@ -37,23 +37,23 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-  $("form#cups2ML").submit(function(event) {
+  $("form#tbsp2Tsp").submit(function(event) {
     event.preventDefault();
     
-    const cups = parseInt($("#cups")).val();
-    const result = cups2ML(cups);
+    const tbsp = parseInt($("#tbsp").val());
+    const result = tbsp2Tsp(tbsp);
 
-    $(".output.cupsToMLOutput").text(result);
+    $(".output.tbsp2TspOutput").append("<p>" + result + "</p>");
   });
 });
 
 $(document).ready(function () {
-  $("form#cups2ML").submit(function(event) {
+  $("form#tsp2Tbsp").submit(function(event) {
     event.preventDefault();
     
-    const cups = parseInt($("#cups")).val();
-    const result = cups2ML(cups);
+    const tsp = parseInt($("#tsp").val());
+    const result = tbsp2Tsp(tsp);
 
-    $(".output.cupsToMLOutput").text(result);
+    $(".output.tsp2TbspOutput").append("<p>" + result + "</p>");
   });
 });
